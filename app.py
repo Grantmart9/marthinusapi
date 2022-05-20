@@ -23,14 +23,14 @@ def TemperatureRealTime():
     return {"Temperature": 23}
 
 
-##@app.route('/humidity/history')
-##def HumidityHistory():
- ##   return ({"Temperature": 23}, {"Temperature": 24})
+@app.route('/humidity/history')
+def HumidityHistory():
+   return {"THumidity":68,"Humidity":67}
 
 
-##@app.route('/temperature/history')
-##def TemperatureHistory():
-##    return ({"Temperature": 23}, {"Temperature": 24})
+@app.route('/temperature/history')
+def TemperatureHistory():
+    return {"THumidity":68,"Humidity":67}
 
 
 if __name__ == '__main__':
