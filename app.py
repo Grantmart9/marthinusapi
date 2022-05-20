@@ -3,13 +3,13 @@ from flask import Flask, render_template, request, redirect, url_for, send_from_
 app = Flask(__name__)
 import pyodbc
 
-server = 'homeautomation2.database.windows.net'
-database = 'homeautomation3'
-username = 'Grant'
-password = 'Xiobh@nmart9'
-driver= '{ODBC Driver 17 for SQL Server}'
+##server = 'homeautomation2.database.windows.net'
+##database = 'homeautomation3'
+##username = 'Grant'
+##password = 'Xiobh@nmart9'
+##driver= '{ODBC Driver 17 for SQL Server}'
 
-cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
+cnxn = pyodbc.connect('Server=tcp:homeautomation2.database.windows.net,1433;Initial Catalog=homeautomation3;Persist Security Info=False;User ID=Grant;Password=Xiobh@nmart9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')
 cursor = cnxn.cursor()
 
 @app.route('/humidity/real')
