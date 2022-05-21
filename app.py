@@ -2,9 +2,7 @@ from datetime import datetime
 from flask import Flask
 app = Flask(__name__)
 
-# Temperature Sensor real-time value
-
-
+# Sensor 1
 @app.route("/Sensor1", methods=['GET'])
 def TemperatureReal():
     return {
