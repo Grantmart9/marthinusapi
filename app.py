@@ -4,39 +4,40 @@ app = Flask(__name__)
 
 # Sensor 1
 @app.route("/Sensor1", methods=['GET'])
-def TemperatureReal():
+def Sensor1():
     return {
-        "RealTime": {
-            "DateTime": "2022-05-10",
-            "Temperature": 23.4,
-            "Humidity": 76,
-            "TemperatureSetpoint": 23.5,
-            "HumiditySetpoint": 76.8
-        },
-        "Historical": [
-            {
-                "DateTime": "2022-05-10",
-                "Temperature": 23,
-                "Humidity": 76,
-                "TemperatureSetpoint": 23.5,
-                "HumiditySetpoint": 76.8
-            },
-            {
-                "DateTime": "2022-05-10",
-                "Temperature": 23,
-                "Humidity": 76,
-                "TemperatureSetpoint": 23.5,
-                "HumiditySetpoint": 76.8
-            },
-            {
-                "DateTime": "2022-05-10",
-                "Temperature": 23,
-                "Humidity": 76,
-                "TemperatureSetpoint": 23.5,
-                "HumiditySetpoint": 76.8
-            }
-        ]
+  "realtime": {
+    "dateTime": "2022-05-21",
+    "temperature": 23.4,
+    "humidity": 76,
+    "temperature_set_point": 23.5,
+    "humidity_set_point": 76.8
+  },
+  "historical": [
+    {
+      "dateTime": "2022-05-21",
+      "temperature": 23.4,
+      "humidity": 76,
+      "temperature_set_point": 23.5,
+      "humidity_set_point": 76.8
+    },
+    {
+      "dateTime": "2022-05-21",
+      "temperature": 23.4,
+      "humidity": 76,
+      "temperature_set_point": 23.5,
+      "humidity_set_point": 76.8
+    },
+    {
+      "dateTime": "2022-05-21",
+      "temperature": 23.4,
+      "humidity": 76,
+      "temperature_set_point": 23.5,
+      "humidity_set_point": 76.8
     }
+  ]
+}
+
 
 
 if __name__ == '__main__':
