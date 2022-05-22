@@ -37,6 +37,19 @@ def Sensor1():
     }
   ]
 }
+# User Authentication
+@app.route("/Users", methods=['GET'])
+def Users():
+    return {
+  "Identification": {
+    "Name": "Grant",
+    "LastName": "Marthinus",
+    "email": "grantmarthinus@gmail.com",
+    "cell": "+27 72 528 1424",
+    "Token": "#nsjd2@1nndn",
+    "Autherized":True
+  }
+}
 
 
 
