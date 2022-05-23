@@ -4,7 +4,7 @@ from flask import Flask
 app = Flask(__name__)
 
 connection = pyodbc.connect(
-    'Server=tcp:homeautomation2.database.windows.net,1433;Initial Catalog=homeautomation3;Persist Security Info=False;User ID=Grant;Password=Xiobh@nmart9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')
+    'Driver={ODBC Driver 13 for SQL Server};Server=tcp:homeautomation2.database.windows.net,1433;Database=homeautomation3;Uid=Grant;Pwd=Xiobh@nmart9;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
 # with conn.cursor() as cursor:
 ##        cursor.execute("SELECT TOP 3 name, collation_name FROM sys.databases")
 ##        row = cursor.fetchone()
