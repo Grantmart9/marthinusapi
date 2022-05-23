@@ -3,12 +3,6 @@ from datetime import datetime
 from flask import Flask
 app = Flask(__name__)
 
-server = 'homeautomation2.database.windows.net'
-database = 'homeautomation3'
-username = 'Grant'
-password = 'Xiobh@nmart9'
-driver = 'ODBC Driver 17 for SQL Server'
-
 connection = pyodbc.connect(
     'Server=tcp:homeautomation2.database.windows.net,1433;Initial Catalog=homeautomation3;Persist Security Info=False;User ID=Grant;Password=Xiobh@nmart9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')
 # with conn.cursor() as cursor:
