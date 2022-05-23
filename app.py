@@ -50,8 +50,6 @@ def Sensor1():
         ]
     }
 # User Authentication
-
-
 @app.route("/Users", methods=['GET'])
 def Users():
     return {
