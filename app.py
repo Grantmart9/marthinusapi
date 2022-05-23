@@ -13,8 +13,6 @@ connection = pyodbc.connect(
 ##            row = cursor.fetchone()
 
 # Sensor 1
-
-
 @app.route("/Sensor1", methods=['GET'])
 def Sensor1():
     return {
