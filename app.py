@@ -2,13 +2,14 @@ from datetime import datetime
 from flask import Flask
 app = Flask(__name__)
 import pyodbc
+
 server = 'homeautomation2.database.windows.net'
 database = 'homeautomation3'
 username = 'Grant'
 password = 'Xiobh@nmart9'   
 driver= 'ODBC Driver 17 for SQL Server'
 
-connection=pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password) as conn:
+connection=pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password)
 ##    with conn.cursor() as cursor:
 ##        cursor.execute("SELECT TOP 3 name, collation_name FROM sys.databases")
 ##        row = cursor.fetchone()
