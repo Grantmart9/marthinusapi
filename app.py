@@ -1,6 +1,20 @@
 from datetime import datetime
 from flask import Flask
 app = Flask(__name__)
+import pyodbc
+server = 'homeautomation2.database.windows.net'
+database = 'homeautomation3'
+username = 'Grant'
+password = 'Xiobh@nmart9'   
+driver= '{ODBC Driver 17 for SQL Server}'
+
+with pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password) as conn:
+    with conn.cursor() as cursor:
+        cursor.execute("SELECT TOP 3 name, collation_name FROM sys.databases")
+        row = cursor.fetchone()
+        while row:
+            print (str(row[0]) + " " + str(row[1]))
+            row = cursor.fetchone()
 
 # Sensor 1
 @app.route("/Sensor1", methods=['GET'])
@@ -50,8 +64,6 @@ def Users():
     "Autherized":True
   }
 }
-
-
 
 if __name__ == '__main__':
     app.run()
