@@ -1,4 +1,7 @@
 {
     "appService.defaultWebAppToDeploy": "/subscriptions/dead4395-505b-468e-a2a4-db8ac4e28d8c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/homeautomation3",
-    "appService.deploySubpath": "."
+    "appService.deploySubpath": ".",
+    "cSpell.words": [
+        "pyodbc"
+    ]
 }

@@ -3,14 +3,13 @@ from datetime import datetime
 from flask import Flask
 app = Flask(__name__)
 
-connection = pyodbc.connect(
-    'Driver={ODBC Driver 13 for SQL Server};Server=tcp:homeautomation2.database.windows.net,1433;Database=homeautomation3;Uid=Grant;Pwd=Xiobh@nmart9;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
-# with conn.cursor() as cursor:
-##        cursor.execute("SELECT TOP 3 name, collation_name FROM sys.databases")
-##        row = cursor.fetchone()
-# while row:
-##            print (str(row[0]) + " " + str(row[1]))
-##            row = cursor.fetchone()
+server = 'tcp:homeautomation2.database.windows.net' 
+database = 'homeautomation3' 
+username = 'Grant' 
+password = 'Xiobh@nmart9' 
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+cursor = cnxn.cursor()
+
 
 # Sensor 1
 @app.route("/Sensor1", methods=['GET'])
