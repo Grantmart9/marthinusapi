@@ -3,7 +3,7 @@ from datetime import datetime
 from flask import Flask
 app = Flask(__name__)
 
-server = 'tcp:homeautomation2.database.windows.net' 
+server = 'homeautomation2.database.windows.net' 
 database = 'homeautomation3' 
 username = 'Grant' 
 password = 'Xiobh@nmart9' 
