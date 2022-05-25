@@ -42,6 +42,7 @@ def Sensor1():
             }
         ]
     }
+    
 # User Authentication
 @app.route("/Users", methods=['GET'])
 def Users():
@@ -55,8 +56,5 @@ def Users():
             "Autherized": "1"
         }
     }
-
-
-
 if __name__ == '__main__':
     app.run()
