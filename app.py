@@ -1,4 +1,4 @@
-import pyodbc
+##import pyodbc
 from datetime import datetime
 from flask import Flask
 
@@ -6,7 +6,7 @@ server = 'tcp:homeautomation2.database.windows.net'
 database = 'homeautomation3' 
 username = 'Grant' 
 password = 'Xiobh@nmart9' 
-cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+##cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 ##cursor = cnxn.cursor()
 
 app = Flask(__name__)
