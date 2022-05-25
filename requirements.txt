@@ -1,2 +1,2 @@
 Flask==2.0.2
-pyodbc
+pyodbc==4.0.27
