@@ -6,8 +6,8 @@ server = 'tcp:homeautomation2.database.windows.net'
 database = 'homeautomation3' 
 username = 'Grant' 
 password = 'Xiobh@nmart9' 
-cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-cursor = cnxn.cursor()
+##cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+##cursor = cnxn.cursor()
 
 app = Flask(__name__)
 # Sensor 1
