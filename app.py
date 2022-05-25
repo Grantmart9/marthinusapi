@@ -1,4 +1,4 @@
-##import pyodbc
+import pyodbc
 from datetime import datetime
 from flask import Flask
 
@@ -6,13 +6,19 @@ server = 'tcp:homeautomation2.database.windows.net'
 database = 'homeautomation3' 
 username = 'Grant' 
 password = 'Xiobh@nmart9' 
-##cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-##cursor = cnxn.cursor()
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+cursor = cnxn.cursor()
 
 app = Flask(__name__)
 # Sensor 1
 @app.route("/Sensor1", methods=['GET'])
 def Sensor1():
+    cursor.execute("SELECT * FROM Humidity")
+    row = cursor.fetchmany()
+    print(row);
+    cursor.execute("SELECT * FROM Temperature")
+    row = cursor.fetchmany()
+    print(row);
     return {
         "realtime": {
             "dateTime": "2022-05-21",
@@ -49,6 +55,9 @@ def Sensor1():
 # User Authentication
 @app.route("/Users", methods=['GET'])
 def Users():
+    cursor.execute("SELECT * FROM Users")
+    row = cursor.fetchmany()
+    print(row);
     return {
         "Identification": {
             "Name": "Grant",
