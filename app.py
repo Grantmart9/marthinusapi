@@ -142,7 +142,7 @@ def irrigation():
         "Date": "2022-05-27 18:50:12:342"
         })
 
-##############                   Fertigation           #############################################################
+##############                   Fertigation           ############################################################
 ###################################################################################################################
 @app.route('/fertigation')
 @jwt_required()
@@ -157,7 +157,7 @@ def fertigation():
         "pH_Setpoint":"4.5",
         })
 
-##############                   Energy          #############################################################
+##############                   Energy          ##################################################################
 ###################################################################################################################
 @app.route('/energy')
 @jwt_required()
@@ -169,6 +169,63 @@ def energy():
         "inverter_solar_charge":"300",
         "inverter_charge_history":[],
         })
+
+##############                   Weather          #################################################################
+###################################################################################################################
+@app.route('/weather')
+@jwt_required()
+def weather():
+    return ({
+        "Icon": "13",
+        "IconPhrase": "Mostly cloudy w/ showers",
+        "HasPrecipitation": "true",
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light",
+        "ShortPhrase": "Variable clouds with a shower",
+        "LongPhrase": "Variable clouds with a shower in the area",
+        "PrecipitationProbability": "44",
+        "ThunderstormProbability": "9",
+        "RainProbability": "44",
+        "Wind": {
+          "Speed": {
+            "Value": "11.1",
+            "Unit": "km/h",
+            "UnitType": "7"
+          },
+          "Direction": {
+            "Degrees": "219",
+            "Localized": "SW",
+            "English": "SW"
+          }
+        },
+        "WindGust": {
+          "Speed": {
+            "Value": "29.6",
+            "Unit": "km/h",
+            "UnitType": "7"
+          },
+          "Direction": {
+            "Degrees": "242",
+            "Localized": "WSW",
+            "English": "WSW"
+          }
+        },
+        "Rain": {
+          "Value": "0.6",
+          "Unit": "mm",
+          "UnitType": "3"
+        },
+        "Evapotranspiration": {
+          "Value": "0.2",
+          "Unit": "mm",
+          "UnitType": "3"
+        },
+        "SolarIrradiance": {
+          "Value": 514.2,
+          "Unit": "W/m²",
+          "UnitType": 33
+        }
+      })
 
 if __name__ == '__main__':
     app.run()
