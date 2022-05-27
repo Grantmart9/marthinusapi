@@ -221,9 +221,9 @@ def weather():
           "UnitType": "3"
         },
         "SolarIrradiance": {
-          "Value": 514.2,
+          "Value": "514.2",
           "Unit": "W/m²",
-          "UnitType": 33
+          "UnitType": "33"
         }
       })
 
