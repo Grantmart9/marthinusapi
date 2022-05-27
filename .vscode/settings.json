@@ -3,5 +3,6 @@
     "appService.deploySubpath": ".",
     "cSpell.words": [
         "pyodbc"
-    ]
+    ],
+    "python.formatting.provider": "black"
 }

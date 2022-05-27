@@ -34,10 +34,86 @@ app.config['SECRET_KEY'] = 'super-secret'
 
 jwt = JWT(app, authenticate, identity)
 
-@app.route('/protected')
+###################################################################################################################
+##############                These endpoints are protected  ######################################################
+###################################################################################################################
+
+###########  Room Temperature & Humidity
+@app.route('/RoomTemperatureHumidity')
 @jwt_required()
 def protected():
-    return ({"Temperature":"23"})
+    return ({
+    "room_1": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_2": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_3": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_4": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_5": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_6": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_7": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_8": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_9": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_10": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    }
+})
 
 if __name__ == '__main__':
     app.run()
