@@ -37,7 +37,7 @@ jwt = JWT(app, authenticate, identity)
 @app.route('/protected')
 @jwt_required()
 def protected():
-    return ("Hello world")
+    return ({"Temperature":"23"})
 
 if __name__ == '__main__':
     app.run()
