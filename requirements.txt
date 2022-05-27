@@ -1,4 +1,4 @@
-Flask
+flask
 pyodbc
 FLASK-jwt   
 Werkzeug==2.0.0
