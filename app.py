@@ -46,6 +46,7 @@ def protected():
     "room_1": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -53,6 +54,7 @@ def protected():
     "room_2": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -60,6 +62,7 @@ def protected():
     "room_3": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -67,6 +70,7 @@ def protected():
     "room_4": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -74,6 +78,7 @@ def protected():
     "room_5": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -81,6 +86,7 @@ def protected():
     "room_6": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -88,6 +94,7 @@ def protected():
     "room_7": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -95,6 +102,7 @@ def protected():
     "room_8": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -102,6 +110,7 @@ def protected():
     "room_9": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
@@ -109,6 +118,7 @@ def protected():
     "room_10": {
         "Temperature": "23",
         "Humidity": "88",
+        "O2":"2",
         "TemperatureSetpoint": "22",
         "HumiditySetpoint": "85",
         "Date": "2022-05-27 18:50:12:342"
