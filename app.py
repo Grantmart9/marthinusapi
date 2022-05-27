@@ -42,7 +42,7 @@ jwt = JWT(app, authenticate, identity)
 ###################################################################################################################
 @app.route('/room')
 @jwt_required()
-def protected():
+def room():
     return ({
     "room_1": {
         "Temperature": "23",
