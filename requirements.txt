@@ -1,6 +1,4 @@
-Flask-RESTful
-PyJWT
-Flask-SQLAlchemy
+Flask
 pyodbc
 FLASK-jwt   
 Werkzeug==2.0.0
