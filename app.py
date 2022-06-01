@@ -127,6 +127,93 @@ def room():
         "Date": "2022-05-27 18:50:12:342"
     }
 })
+##############                   Room Temperature & Humidity  #####################################################
+###################################################################################################################
+@app.route('/dashboard')
+@jwt_required()
+def dashboard():
+    return ({
+    "room_1": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_2": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_3": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_4": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_5": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_6": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_7": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_8": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_9": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    },
+    "room_10": {
+        "Temperature": "23",
+        "Humidity": "88",
+        "O2":"2",
+        "TemperatureSetpoint": "22",
+        "HumiditySetpoint": "85",
+        "Date": "2022-05-27 18:50:12:342"
+    }
+})
 
 ##############                   Irrigation           #############################################################
 ###################################################################################################################
