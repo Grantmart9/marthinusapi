@@ -14,7 +14,7 @@ class User(object):
 
 
 users = [
-    User(1, "Grant", "Xiobh@nmart9"),
+    User(1, "Grant", "xiobh@nmart9"),
     User(2, "Xio", "1234"),
     User(3, "Bion", "1234"),
 ]
