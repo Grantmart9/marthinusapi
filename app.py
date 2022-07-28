@@ -2,11 +2,6 @@ from flask import Flask
 from flask_jwt import JWT, jwt_required, current_identity
 from werkzeug.security import safe_str_cmp
 from flask_cors import CORS
-import sqlite3
-
-#### Connect to database ####
-con = sqlite3.connect("users.db")
-
 
 class User(object):
     def __init__(self, id, username, password):
