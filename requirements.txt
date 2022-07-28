@@ -1,7 +1,6 @@
 flask
-pyodbc
 FLASK-jwt   
 Werkzeug==2.0.0
 jinja2==3.0.3
 Flask-Cors
-sqlite3
+
