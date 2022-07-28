@@ -64,7 +64,7 @@ def room():
             "Date": "2022-05-27 18:50:12:342",
         },
         "room_2": {
-            "Temperature": "23",
+            "Temperature": "24",
             "Humidity": "88",
             "O2": "2",
             "TemperatureSetpoint": "22",
